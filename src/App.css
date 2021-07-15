@@ -1,0 +1,6 @@
+.bgc {
+  background: url("./utils/background/medic.svg");
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+}

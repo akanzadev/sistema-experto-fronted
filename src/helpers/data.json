@@ -1,0 +1,12 @@
+[
+  { "id": "1", "question": "que color es 1", "img": "https://cdn.aarp.net/content/dam/aarp/health/conditions_treatments/2020/02/1140-corona-virus-image-esp.web.jpg" },
+  { "id": "2", "question": "que color es 2", "img": "" },
+  { "id": "3", "question": "que color es 3", "img": "" },
+  { "id": "4", "question": "que color es 4", "img": "" },
+  { "id": "5", "question": "que color es 5", "img": "" },
+  { "id": "6", "question": "que color es 6", "img": "" },
+  { "id": "7", "question": "que color es 7", "img": "" },
+  { "id": "8", "question": "que color es 8", "img": "" },
+  { "id": "9", "question": "que color es 9", "img": "" },
+  { "id": "10", "question": "que color es 10", "img": "" }
+]

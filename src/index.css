@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.report {
+  padding: 30px 0px;
+}
+.report__title {
+  width: 100%;
+  padding: 50px 0px;
+  border: 1px solid gray;
+  color: white;
+  background-color: #202124;
+  text-align: center;
+}
+.report__content {
+  padding: 10px;
+  background-color: #ecf0f1;
+}
+.evaluation {
+  background-color: white;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 20px gray;
+}
+.evaluation__title {
+  padding: 10px 0px;
+}
+.evaluation__date {
+  background-color: #63656b;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 30px;
+  width: auto;
+}
+.evaluation__date span {
+  font-size: 18px;
+}
