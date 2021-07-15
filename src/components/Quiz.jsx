@@ -24,7 +24,7 @@ const Quiz = () => {
   const loadQuestions = async () => {
     try {
       const { data } = await axios.get(
-        "https://se-fronted.herokuapp.com/questions"
+        "https://se-backend-app.herokuapp.com/questions"
       );
       const { questions } = data;
       if (mounted.current) {
@@ -80,7 +80,7 @@ const Quiz = () => {
         body.user = id;
         body.diagnostic = evaluation;
       });
-      await axios.post("https://se-fronted.herokuapp.com/evaluation", body);
+      await axios.post("https://se-backend-app.herokuapp.com/evaluation", body);
       await Swal.fire({
         position: "top-end",
         icon: "success",

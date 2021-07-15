@@ -16,7 +16,7 @@ const Report = () => {
       idUser = id;
     });
     const { data } = await axios.get(
-      `https://se-fronted.herokuapp.com/evaluations/user/${idUser}`
+      `https://se-backend-app.herokuapp.com/evaluations/user/${idUser}`
     );
     const { evaluations } = data;
     setEvaluations(evaluations.reverse());
