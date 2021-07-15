@@ -18,7 +18,7 @@ export const useForm = (initialState = {}) => {
       e.preventDefault();
       setValues(values);
       // servicio de autenticación
-      await axios.post("http://localhost:7800/user", values);
+      await axios.post("https://se-fronted.herokuapp.com/user", values);
       await Swal.fire({
         position: "top-end",
         icon: "success",

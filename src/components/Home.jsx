@@ -16,7 +16,7 @@ const Home = () => {
 
   const loadUsers = async () => {
     try {
-      const { data } = await axios.get("http://localhost:7800/users");
+      const { data } = await axios.get("https://se-fronted.herokuapp.com/users");
 
       const { users: pacientes } = data;
       if (mounted.current) {
@@ -34,7 +34,7 @@ const Home = () => {
   const [evaluations, setEvaluations] = useState([]);
   const loadEvaluationOfUser = async (id) => {
     const { data } = await axios.get(
-      `http://localhost:7800/evaluations/user/${id}`
+      `https://se-fronted.herokuapp.com/evaluations/user/${id}`
     );
     const { evaluations } = data;
     setEvaluations(evaluations.reverse());

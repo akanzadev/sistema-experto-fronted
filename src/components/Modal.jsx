@@ -1,7 +1,6 @@
 import React from "react";
 import Evaluation from "./Evaluation";
 const Modal = ({ evaluations }) => {
-  console.log(evaluations && 3);
   return (
     <>
       <div

@@ -23,7 +23,9 @@ const Quiz = () => {
   }, []);
   const loadQuestions = async () => {
     try {
-      const { data } = await axios.get("http://localhost:7800/questions");
+      const { data } = await axios.get(
+        "https://se-fronted.herokuapp.com/questions"
+      );
       const { questions } = data;
       if (mounted.current) {
         setQuestions(questions);
@@ -69,7 +71,7 @@ const Quiz = () => {
       });
     }
   };
-  const saveResult = () => {
+  const saveResult = async () => {
     try {
       // Tau prolog
       const { token } = JSON.parse(window.localStorage.getItem("token"));
@@ -78,8 +80,8 @@ const Quiz = () => {
         body.user = id;
         body.diagnostic = evaluation;
       });
-      axios.post("http://localhost:7800/evaluation", body);
-      Swal.fire({
+      await axios.post("https://se-fronted.herokuapp.com/evaluation", body);
+      await Swal.fire({
         position: "top-end",
         icon: "success",
         title: "Guardado con exito",
@@ -164,9 +166,7 @@ const Quiz = () => {
           />
           <div className="card-body">
             <h5 className="card-title">Empezar test</h5>
-            <p className="card-text">
-              Inicia un proceso de evaluacion ahora
-            </p>
+            <p className="card-text">Inicia un proceso de evaluacion ahora</p>
             <button
               className="btn btn-primary w-100"
               onClick={() => {

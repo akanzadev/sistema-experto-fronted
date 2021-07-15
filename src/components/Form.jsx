@@ -3,7 +3,7 @@ import { useForm } from "../hooks/useForm";
 
 const Form = () => {
   const [values, handleInputChange, handleSubmit] = useForm({
-    email: "",
+    email: "example@gmail.com",
     password: "",
   });
   return (
